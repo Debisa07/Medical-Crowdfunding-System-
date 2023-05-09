@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
+
 // Components
 import FullButton from "../Buttons/FullButton";
 // Assets
@@ -25,6 +27,11 @@ export default function Header() {
         </div>
       </LeftSide>
       <RightSide>
+             <div style={{ marginLeft: "10px", width: "90px" }}>
+              <Link to="/signin">
+  <FullButton title="Login" />
+</Link>
+            </div>
         <ImageWrapper>
           <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} width={400} />
         

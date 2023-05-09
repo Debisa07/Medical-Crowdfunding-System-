@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Link } from "react-scroll";
+import { Link  } from "react-scroll";
 // Components
 import Sidebar from "../Nav/Sidebar";
 import Backdrop from "../Elements/Backdrop";
 // Assets
-
 import Logo from "../../assets/svg/legash_logo.png";
-
 import BurgerIcon from "../../assets/svg/BurgerIcon";
-
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
   const [sidebarOpen, toggleSidebar] = useState(false);
@@ -21,15 +18,13 @@ export default function TopNavbar() {
       window.removeEventListener("scroll", () => setY(window.scrollY));
     };
   }, [y]);
-
-
   return (
     <>
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
       <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "120px" } : { height: "80px" }}>
         <NavInner className="container flexSpaceCenter">
-          <Link className="pointer flexNullCenter" to="home"  >
+          <Link  className="pointer flexNullCenter" to="home"  >
            <img src={Logo} width={250} /> 
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
@@ -56,7 +51,6 @@ export default function TopNavbar() {
                 Blog
               </Link>
             </li>
-          
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
                 Contact
@@ -73,19 +67,17 @@ export default function TopNavbar() {
             <SearchIcon className="material-icons"></SearchIcon>
           </SearchWrapper>
           <UlWrapperRight className="flexNullCenter">
-            <li className="semiBold font15 pointer">
+            {/* <li className="semiBold font15 pointer">
               <a href="/" style={{ padding: "10px 30px 10px 0" }}>
                 Log in
               </a> 
-            </li>
-         
+            </li> */}
           </UlWrapperRight>
         </NavInner>
       </Wrapper>
     </>
   );
 }
-
 const Wrapper = styled.nav`
   width: 100%;
   position: fixed;
@@ -120,9 +112,6 @@ const UlWrapperRight = styled.ul`
     display: none;
   }
 `;
-
-
-
 const SearchWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -133,14 +122,12 @@ const SearchWrapper = styled.div`
     display: none;
   }
 `;
-
 const SearchInput = styled.input`
   border: none;
   outline: none;
   background-color: transparent;
   padding: 8px 15px;
 `;
-
 const SearchIcon = styled.div`
   color: #068e95;
   margin-right: 8px;
