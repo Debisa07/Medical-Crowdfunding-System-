@@ -1,17 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+
+// import ProgressBar from "@ramonak/-progress-bar";
+
 // Components
 import ProjectBox from "../Elements/ProjectBox";
 import FullButton from "../Buttons/FullButton";
 // Assets
 import ProjectImg1 from "../../assets/img/projects/1.png";
-import ProjectImg2 from "../../assets/img/projects/2.png";
-import ProjectImg3 from "../../assets/img/projects/3.png";
-import ProjectImg4 from "../../assets/img/projects/4.png";
-import ProjectImg5 from "../../assets/img/projects/5.png";
-import ProjectImg6 from "../../assets/img/projects/6.png";
-import AddImage2 from "../../assets/img/add/add2.png";
-
 export default function Projects() {
   return (
     <Wrapper id="projects">
@@ -25,9 +21,10 @@ export default function Projects() {
               <ProjectBox
                 img={ProjectImg1}
                 title="Help Sally to get better"
-                text="We need your immediate attention.  she is very ill and need immediate  treatment."
+                text="We need "                
                 action={() => alert("clicked")}
               />
+                {/* <ProgressBar completed={50} bgColor="#51A3A3" animateOnRender={true} /> */}
             </div>
             <br></br>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -37,6 +34,7 @@ export default function Projects() {
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
               />
+                {/* <ProgressBar completed={50} bgColor="#51A3A3" animateOnRender={true} /> */}
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
@@ -45,6 +43,7 @@ export default function Projects() {
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
               />
+                {/* <ProgressBar completed={80} bgColor="#51A3A3" animateOnRender={true} /> */}
             </div>
           </div>
           <br></br>
@@ -56,6 +55,8 @@ export default function Projects() {
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
               />
+                {/* <ProgressBar completed={10} bgColor="#51A3A3" animateOnRender={true} /> */}
+
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
@@ -64,6 +65,8 @@ export default function Projects() {
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
               />
+                {/* <ProgressBar completed={90} bgColor="#51A3A3" animateOnRender={true} /> */}
+
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
@@ -72,6 +75,8 @@ export default function Projects() {
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
               />
+                {/* <ProgressBar completed={62} bgColor="#51A3A3" animateOnRender={true} /> */}
+
             </div>
           </div>
           <div className="row flexCenter">
