@@ -13,6 +13,7 @@ import BurgerIcon from "../../assets/svg/BurgerIcon";
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
   const [sidebarOpen, toggleSidebar] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
   // const legash_logo =styled(Image);
   useEffect(() => {
     window.addEventListener("scroll", () => setY(window.scrollY));
@@ -53,7 +54,6 @@ export default function TopNavbar() {
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="blog" spy={true} smooth={true} offset={-80}>
                 Blog
-              
               </Link>
             </li>
           
@@ -63,17 +63,22 @@ export default function TopNavbar() {
               </Link>
             </li>
           </UlWrapper>
+          <SearchWrapper>
+            <SearchInput
+              type="text"
+              placeholder="Search"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            <SearchIcon className="material-icons"></SearchIcon>
+          </SearchWrapper>
           <UlWrapperRight className="flexNullCenter">
             <li className="semiBold font15 pointer">
               <a href="/" style={{ padding: "10px 30px 10px 0" }}>
                 Log in
-              </a>
+              </a> 
             </li>
-            <li className="semiBold font15 pointer flexCenter">
-              <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
-                Get Started
-              </a>
-            </li>
+         
           </UlWrapperRight>
         </NavInner>
       </Wrapper>
@@ -117,3 +122,26 @@ const UlWrapperRight = styled.ul`
 `;
 
 
+
+const SearchWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-left: 15px;
+  @media (max-width: 760px) {
+    display: none;
+  }
+`;
+
+const SearchInput = styled.input`
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 8px 15px;
+`;
+
+const SearchIcon = styled.div`
+  color: #068e95;
+  margin-right: 8px;
+`;

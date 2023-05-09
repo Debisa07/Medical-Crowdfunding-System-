@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ProgressBar from "./ProgressBar";
 
 export default function ProjectBox({ img, title, text, action}) {
   return (
@@ -9,6 +10,7 @@ export default function ProjectBox({ img, title, text, action}) {
       </ImgBtn>
       <h3 className="font20 extraBold">{title}</h3>
       <p className="font13">{text}</p>
+      {/* <ProgressBar>completed={50} </ProgressBar> */}
     </Wrapper>
   );
 }
