@@ -1,58 +1,110 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from "../assets/svg/legash_logo.png";
-import '../style/SignIn.css';
+import '../style/SignUp.css';
 
 
 function SignUp() {
-  const [name, setName] = useState("");
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [gender, setGender] = useState("");
+  const [role, setRole] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
     // perform sign-up logic with name, email and password
-    console.log("Name:", name);
+    console.log("FirstName:", firstname);
+    console.log("LastName:", lastname);
     console.log("Email:", email);
     console.log("Password:", password);
+    console.log("Phone Number:", phoneNumber);
+    console.log("Gender:", gender);
+    console.log("Role:", role);
   };
 
   return (
     <div className="signup">
       <Link to="/">
-        <img src={Logo} width={250} alt="logo" />
+        <img src={Logo}  alt="logo" />
       </Link>
       <form onSubmit={handleSubmit}>
         <h2>Sign Up</h2>
-        <label htmlFor="name">Name:</label>
+        {/* <label htmlFor="name">Name:</label> */}
         <input
           type="text"
-          id="name"
-          name="name"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
+          id="firstname"
+          name="firstname"
+          placeholder="Enter your Firstname"
+          value={firstname}
+          onChange={(event) => setFirstName(event.target.value)}
         />
-        <label htmlFor="email">Email:</label>
+           <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Enter your Lasrname"
+          value={lastname}
+          onChange={(event) => setLastName(event.target.value)}
+        />
+        {/* <label htmlFor="email">Email:</label> */}
         <input
           type="email"
           id="email"
           name="email"
+          placeholder="Enter your email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
         />
-        <label htmlFor="password">Password:</label>
+        {/* <label htmlFor="password">Password:</label> */}
         <input
           type="password"
           id="password"
           name="password"
+          placeholder="Enter your password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
         />
+        {/* <label htmlFor="phoneNumber">Phone Number:</label> */}
+        <input
+          type="text"
+          id="phoneNumber"
+          name="phoneNumber"
+          placeholder="Enter your phone number"
+          value={phoneNumber}
+          onChange={(event) => setPhoneNumber(event.target.value)}
+        />
+        {/* <label htmlFor="gender">Gender:</label> */}
+        <select
+          id="gender"
+          name="gender"
+          value={gender}
+          onChange={(event) => setGender(event.target.value)}
+        >
+          <option value="" disabled>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <label htmlFor="role">Role:</label>
+        <select
+          id="role"
+          name="role"
+          value={role}
+          onChange={(event) => setRole(event.target.value)}
+        >
+          <option value="" disabled>Select Role</option>
+          <option value="admin">Admin</option>
+          <option value="user">User</option>
+        </select>
         <button type="submit">Sign Up</button>
-      </form>
       <p>
         Already have an account? <Link to="/signin">Sign in here</Link>.
       </p>
+      </form>
+    
     </div>
   );
 }

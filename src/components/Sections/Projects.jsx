@@ -39,6 +39,8 @@ export default function Projects() {
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
               />
+      <ProgressBar  bgcolor={'#00695c'} completed={30} />
+
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
@@ -47,7 +49,7 @@ export default function Projects() {
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
               />
-      <ProgressBar  bgcolor={'#00695c'} completed={50} />
+      <ProgressBar  bgcolor={'#00695c'} completed={45} />
 
             </div>
           </div>
@@ -60,7 +62,7 @@ export default function Projects() {
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
               />
-      <ProgressBar  bgcolor={'#00695c'} completed={50} />
+      <ProgressBar  bgcolor={'#00695c'} completed={70} />
               
 
             </div>
@@ -72,7 +74,7 @@ export default function Projects() {
                 action={() => alert("clicked")}
               />
             
-      <ProgressBar  bgcolor={'#00695c'} completed={50} />
+      <ProgressBar  bgcolor={'#00695c'} completed={38} />
 
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -82,7 +84,7 @@ export default function Projects() {
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
               />
-      <ProgressBar  bgcolor={'#00695c'} completed={50} />      
+      <ProgressBar  bgcolor={'#00695c'} completed={80} />      
             </div>
           </div>
           <div className="row flexCenter">

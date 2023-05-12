@@ -37,6 +37,8 @@ export default function Projects() {
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
               />
+      <ProgressBar  bgcolor={'#00695c'} completed={50} />
+
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
