@@ -77,28 +77,8 @@ function SignUp() {
           onChange={(event) => setPhoneNumber(event.target.value)}
         />
         {/* <label htmlFor="gender">Gender:</label> */}
-        <select
-          id="gender"
-          name="gender"
-          value={gender}
-          onChange={(event) => setGender(event.target.value)}
-        >
-          <option value="" disabled>Select Gender</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option>
-        </select>
-        <label htmlFor="role">Role:</label>
-        <select
-          id="role"
-          name="role"
-          value={role}
-          onChange={(event) => setRole(event.target.value)}
-        >
-          <option value="" disabled>Select Role</option>
-          <option value="admin">Admin</option>
-          <option value="user">User</option>
-        </select>
+       
+    
         <button type="submit">Sign Up</button>
       <p>
         Already have an account? <Link to="/signin">Sign in here</Link>.

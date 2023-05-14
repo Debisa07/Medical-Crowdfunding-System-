@@ -20,10 +20,8 @@ function Login() {
         <img src={Logo} width={250} alt="logo" />
       </Link>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" value={email} onChange={(event) => setEmail(event.target.value)} />
-        <label htmlFor="password">Password:</label>
-        <input type="password" id="password" name="password" value={password} onChange={(event) => setPassword(event.target.value)} />
+        <input type="email" id="email" name="email" placeholder="Email" value={email} onChange={(event) => setEmail(event.target.value)} />
+        <input type="password" id="password" name="password" placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)} />
         <button type="submit">Log in</button>
       </form>
       <p>
