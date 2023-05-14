@@ -8,8 +8,14 @@ import FullButton from "../Buttons/FullButton";
 import ProgressBar from "../Elements/ProgressBar";
 // Assets
 import ProjectImg1 from "../../assets/img/projects/1.png";
+import ProjectImg2 from "../../assets/img/projects/2.png";
+import ProjectImg3 from "../../assets/img/projects/3.png";
+import ProjectImg4 from "../../assets/img/projects/4.png";
+import ProjectImg5 from "../../assets/img/projects/5.png";
+import ProjectImg6 from "../../assets/img/projects/6.png";
+// import ProjectImg1 from "../../assets/img/projects/7.png";
 
-// const testData = [
+// // const testData = [
 //   { bgcolor: "#00695c", completed: 30 },
 // ];
 
@@ -25,8 +31,8 @@ export default function Projects() {
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg1}
-                title="Help Sally to get better"
-                text="We need your immediate attention.  she is very ill and need immediate  treatment. "                
+                title="Hitsan Tigest Abera"
+                text="Raised: $565    | Still missing: $1200 "                
                 action={() => alert("clicked")}
               />
       <ProgressBar  bgcolor={'#00695c'} completed={50} />
@@ -34,9 +40,9 @@ export default function Projects() {
             <br></br>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg1}
-                title="Help Sally to get better"
-                text="We need your immediate attention.  she is very ill and need immediate  treatment."
+                img={ProjectImg3}
+                title="Lij Eyoab Samuel"
+                text="Raised: $230    | Still missing: $2200 "    
                 action={() => alert("clicked")}
               />
       <ProgressBar  bgcolor={'#00695c'} completed={30} />
@@ -44,7 +50,7 @@ export default function Projects() {
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg1}
+                img={ProjectImg2}
                 title="Help Sally to get better"
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
@@ -57,7 +63,7 @@ export default function Projects() {
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg1}
+                img={ProjectImg4}
                 title="Help Sally to get better"
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
@@ -68,7 +74,7 @@ export default function Projects() {
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg1}
+                img={ProjectImg5}
                 title="Help Sally to get better"
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
@@ -79,7 +85,7 @@ export default function Projects() {
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg1}
+                img={ProjectImg6}
                 title="Help Sally to get better"
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}

@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import FullButton from "../Buttons/FullButton";
+
 // Assets
 import CloseIcon from "../../assets/svg/CloseIcon";
 import Logo from "../../assets/svg/legash_logo.png";
@@ -93,9 +95,14 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
       </UlStyle>
       <UlStyle className="flexSpaceCenter">
         <li className="semiBold font15 pointer">
-          <a href="/" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
+            <div style={{ marginLeft: "10px", width: "90px" }}>
+              <Link to="/">
+  <FullButton title="Login" />
+</Link>
+            </div>
+          {/* <a href="/" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
             Log in
-          </a>
+          </a> */}
         </li>
       </UlStyle>
     </Wrapper>

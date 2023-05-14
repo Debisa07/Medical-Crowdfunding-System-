@@ -27,11 +27,11 @@ export default function Header() {
         </div>
       </LeftSide>
       <RightSide>
-             <div style={{ marginLeft: "10px", width: "90px" }}>
+             {/* <div style={{ marginLeft: "10px", width: "90px" }}>
               <Link to="/signin">
   <FullButton title="Login" />
 </Link>
-            </div>
+            </div> */}
         <ImageWrapper>
           <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} width={400} />
         

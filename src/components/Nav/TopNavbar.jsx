@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link  } from "react-scroll";
 // Components
+import FullButton from "../Buttons/FullButton";
+
 import Sidebar from "../Nav/Sidebar";
 import Backdrop from "../Elements/Backdrop";
 // Assets
@@ -72,6 +74,11 @@ export default function TopNavbar() {
                 Log in
               </a> 
             </li> */}
+             <div style={{ marginLeft: "10px", width: "90px" }}>
+              <Link to="/signin">
+  <FullButton title="Login" />
+</Link>
+            </div>
           </UlWrapperRight>
         </NavInner>
       </Wrapper>
