@@ -76,17 +76,13 @@ function SignUp() {
           value={phoneNumber}
           onChange={(event) => setPhoneNumber(event.target.value)}
         />
-        {/* <label htmlFor="gender">Gender:</label> */}
-       
-    
+      
         <button type="submit">Sign Up</button>
       <p>
         Already have an account? <Link to="/signin">Sign in here</Link>.
       </p>
       </form>
-    
     </div>
   );
 }
-
 export default SignUp;

@@ -34,7 +34,7 @@ const ImgBtn = styled.button`
   outline: none;
   padding: 0px;
   margin: 0px;
-  // :hover > img {
-  //   opacity: 0.5;
-  // }
+  :hover > img {
+    opacity: 0.5;
+  }
 `;
