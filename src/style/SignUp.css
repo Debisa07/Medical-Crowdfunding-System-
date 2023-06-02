@@ -16,17 +16,8 @@
     max-width: 30%;
     /* height: auto; */
 }
-/* 
-.signup form {
-    display: flex;
-    flex-direction: column;
-    
-} */
 
-.signup h2 {
-    margin-top: 0;
-    font-size: 14px;
-}
+
 
 .signup label {
     font-size: 14px;

@@ -45,8 +45,7 @@ export default function Projects() {
                 text="Raised: $230    | Still missing: $2200 "    
                 action={() => alert("clicked")}
               />
-      <ProgressBar  bgcolor={'#00695c'} completed={30} />
-
+          <ProgressBar  bgcolor={'#00695c'} completed={30} />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
@@ -56,7 +55,6 @@ export default function Projects() {
                 action={() => alert("clicked")}
               />
       <ProgressBar  bgcolor={'#00695c'} completed={45} />
-
             </div>
           </div>
           <br></br>
@@ -69,8 +67,6 @@ export default function Projects() {
                 action={() => alert("clicked")}
               />
       <ProgressBar  bgcolor={'#00695c'} completed={70} />
-              
-
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
@@ -79,9 +75,7 @@ export default function Projects() {
                 text="We need your immediate attention.  she is very ill and need immediate  treatment."
                 action={() => alert("clicked")}
               />
-            
       <ProgressBar  bgcolor={'#00695c'} completed={38} />
-
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
@@ -98,7 +92,6 @@ export default function Projects() {
               <Link to="/campain">
   <FullButton title="Load More" />
 </Link>
-
             </div>
           </div>
         </div>
@@ -106,7 +99,6 @@ export default function Projects() {
     </Wrapper>
   );
 }
-
 const Wrapper = styled.section`
   width: 100%;
 `;
