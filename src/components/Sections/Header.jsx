@@ -15,23 +15,20 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-{/* <img  src={motivation}  width={200}/> */}
           <h1 className="extraBold font60">We are Legash !</h1>
           <HeaderP className="font13 semiBold">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
             voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Donate Now " />
+              <Link to="/campain">
+        <FullButton title="Donate Now" />
+      </Link>
           </BtnWrapper>
         </div>
       </LeftSide>
       <RightSide>
-             {/* <div style={{ marginLeft: "10px", width: "90px" }}>
-              <Link to="/signin">
-  <FullButton title="Login" />
-</Link>
-            </div> */}
+          
         <ImageWrapper>
           <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} width={400} />
         
@@ -44,6 +41,7 @@ export default function Header() {
     </Wrapper>
   );
 }
+
 
 const Wrapper = styled.section`
   padding-top: 100px;

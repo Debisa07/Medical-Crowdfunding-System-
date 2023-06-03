@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import ProgressBar from "./ProgressBar";
+
 
 export default function ProjectBox({ img, title, text, action}) {
   return (
     <Wrapper>
-      <ImgBtn className="aniamte pointer" onClick={action ? () => action() : null}>
+      <ImgBtn  hight="100px" width="100px"
+      className="aniamte pointer" onClick={action ? () => action() : null}>
         <img className="radius8" src={img} alt="project"></img>
       </ImgBtn>
       <h3 className="font20 extraBold">{title}</h3>
       <p className="font13">{text}</p>
-      {/* <ProgressBar>completed={50} </ProgressBar> */}
+      
     </Wrapper>
   );
 }
@@ -21,14 +22,14 @@ const Wrapper = styled.div`
   img {
     width: 100%;
     height: auto;
-    margin: 20px 0;
+    // margin: 0px 0;
   }
   h3 {
-    padding-bottom: 10px;
+    // padding-bottom: 10px;
   }
 `;
 const ImgBtn = styled.button`
-  background-color: transparent;
+
   border: 0px;
   outline: none;
   padding: 0px;

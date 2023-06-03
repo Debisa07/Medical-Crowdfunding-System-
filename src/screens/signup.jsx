@@ -75,7 +75,6 @@ function SignUp() {
           value={phoneNumber}
           onChange={(event) => setPhoneNumber(event.target.value)}
         />
-        {/* <label htmlFor="gender">Gender:</label> */}
 
         <button type="submit">Sign Up</button>
         <p>
@@ -85,5 +84,4 @@ function SignUp() {
     </div>
   );
 }
-
 export default SignUp;
