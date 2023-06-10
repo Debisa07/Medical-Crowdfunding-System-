@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
+import { useTranslation, Trans, I18nextProvider } from 'react-i18next';
 
 // Components
 import FullButton from "../Buttons/FullButton";
@@ -11,6 +12,7 @@ import Dots from "../../assets/svg/Dots";
 import motivation from "../../assets/img/Logo/legash logo.png"
 
 export default function Header() {
+  const { t } = useTranslation();
   return (
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
@@ -22,7 +24,9 @@ export default function Header() {
           </HeaderP>
           <BtnWrapper>
               <Link to="/campain">
-        <FullButton title="Donate Now" />
+        {/* <FullButton title="Donate Now" /> */}
+   <button type="submit">{t("Donate Now")}</button>
+
       </Link>
           </BtnWrapper>
         </div>

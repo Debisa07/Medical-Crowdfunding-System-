@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/svg/legash_logo.png";
-import '../style/SignUp.css';
-
+import "../style/SignUp.css";
 
 function SignUp() {
   const [firstname, setFirstName] = useState("");
@@ -28,7 +27,7 @@ function SignUp() {
   return (
     <div className="signup">
       <Link to="/">
-        <img src={Logo}  alt="logo" />
+        <img src={Logo} alt="logo" />
       </Link>
       <form onSubmit={handleSubmit}>
         <h2>Sign Up</h2>
@@ -41,7 +40,7 @@ function SignUp() {
           value={firstname}
           onChange={(event) => setFirstName(event.target.value)}
         />
-           <input
+        <input
           type="text"
           id="lastname"
           name="lastname"
@@ -76,11 +75,11 @@ function SignUp() {
           value={phoneNumber}
           onChange={(event) => setPhoneNumber(event.target.value)}
         />
-      
+
         <button type="submit">Sign Up</button>
-      <p>
-        Already have an account? <Link to="/signin">Sign in here</Link>.
-      </p>
+        <p>
+          Already have an account? <Link to="/signin">Sign in here</Link>.
+        </p>
       </form>
     </div>
   );

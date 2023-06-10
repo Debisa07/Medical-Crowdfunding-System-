@@ -1,10 +1,17 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter, Route, Routes } from "react-router-dom"; // import BrowserRouter, Route and Routes from react-router-dom
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
+import "./App.css";
 import Landing from "./screens/Landing.jsx";
-import Signin from "./screens/signin.jsx"
+import Signin from "./screens/signin.jsx";
 import Signup from "./screens/signup.jsx";
-import Campain from "./screens/campain.jsx"
+import Campain from "./screens/campain.jsx";
 
 // import PageOne from "./screens/PageOne.jsx"; // import your additional screens
 export default function App() {
@@ -26,8 +33,6 @@ export default function App() {
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/campain" element={<Campain />} />
-        
-
       </Routes>
     </BrowserRouter>
   );

@@ -13,11 +13,7 @@ import ProjectImg3 from "../../assets/img/projects/3.png";
 import ProjectImg4 from "../../assets/img/projects/4.png";
 import ProjectImg5 from "../../assets/img/projects/5.png";
 import ProjectImg6 from "../../assets/img/projects/6.png";
-// import ProjectImg1 from "../../assets/img/projects/7.png";
 
-// // const testData = [
-//   { bgcolor: "#00695c", completed: 30 },
-// ];
 
 export default function Projects() {
   return (
