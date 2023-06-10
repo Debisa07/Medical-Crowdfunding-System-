@@ -17,11 +17,11 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">We are Legash !</h1>
-          <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-          </HeaderP>
+            <h1 className="extraBold font60">{t('We are Legash !')}</h1>
+          {/* <h1 className="extraBold font60"></h1> */}
+        <HeaderP className="font13 semiBold">
+      {t('headerText')}
+    </HeaderP>
           <BtnWrapper>
               <Link to="/campain">
         {/* <FullButton title="Donate Now" /> */}

@@ -1,4 +1,12 @@
 {
   "Log in":"login",
-  "Donate Now":"Donate Now"
+  "Donate Now":"Donate Now",
+  "Sign Up":"Sign Up",
+  "Contact":"Contact",
+  "About Us":"About Us",
+  "Home":"Home",
+  "Patient":"Patient",
+  "Donation":"Donation",
+  "We are Legash !":"We are Legash !",
+  "headerText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
 }
