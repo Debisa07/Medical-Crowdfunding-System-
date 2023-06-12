@@ -1,8 +1,8 @@
 export default function AboutUs() {
   return (
     <>
-      <div className="about-us">
-        <h1 className="text-center mb-4">About Us</h1>
+      <div className="about-us lightBg m-5">
+        <h1 className="text-center mb-4 mt-5 pt-4">About Us</h1>
         <div class="container text-center">
           <div class="row">
             <div class="col-md">

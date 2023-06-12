@@ -1,4 +1,5 @@
 import TopNavbar from "../components/Nav/TopNavbar";
+import Footer from "../components/Sections/Footer";
 export default function DetailPage() {
   return (
     <>
@@ -100,43 +101,14 @@ export default function DetailPage() {
                     many live hands to mouth, access to health care is a luxury.
                   </p>
                   <p>
-                    Lommi Projects found Diriba 120 KM North of Ethiopia’s
-                    capital and 60 KM from our nearest operation site. His
-                    parents were unaware of the surgical solution. Although the
-                    sudden realization of free surgery was now a possibility,
-                    they could neither afford the transportation nor the stay at
-                    the hospital. Thus, we arranged an ambulance for the first
-                    visit. Booked a VIP room, where Diriba and his parents can
-                    stay without worry. We gave three days for Diriba to adjust
-                    to the new environment and finally, a highly qualified
-                    Plastic Surgeon Performed the surgery.
-                  </p>
-                  <p>
-                    We continuously provided a transportation stipend for the
-                    follow-up! Diriba is just a drop in the ocean! Each day,
-                    many kids are born with a cleft lip & palate, and some end
-                    up growing up with it in this 21st Century. Many are either
-                    unaware or financially unable to provide this life-changing
-                    surgery. We hope 2022 will be the year for those many like
-                    Diriba. and his kind soled parents! In the following 3
-                    months, we will operate a plastic surgery campaign on more
-                    than 400 people, including cleft lip & palate, burns, and
-                    acid attack patients! Diriba will need follow-up for Speech
-                    Therapy. Via Lommi Projects we hope our energetic community
-                    can continue to make the impact we have started upon! Donate
-                    Now! Please contact us at contact@lommi.org for further
-                    questions and special requests!
-                  </p>
-                  <p>
-                    Via Lommi Projects we hope our energetic community can
-                    continue to make the impact we have started upon! Donate Now
-                    at lommi.org! Bank Accounts Name: Health and Hope for the
-                    Generation Charitable Organization Commercial Bank of
-                    Ethiopia 1000480625033 Awash Bank: 01308843013600 Bank of
-                    Abyssina: 98344168 Cooperative Bank of Oromia: 1008800041702
-                    Oromia Bank: 1501427000001 Dashen: 0134319701011 Foreign
-                    Wire Transfer Bank of Abyssinia 98343997 Addis Ababa,
-                    Ethiopia
+                    His parents were unaware of the surgical solution. Although
+                    the sudden realization of free surgery was now a
+                    possibility, they could neither afford the transportation
+                    nor the stay at the hospital. Thus, we arranged an ambulance
+                    for the first visit. Booked a VIP room, where Diriba and his
+                    parents can stay without worry. We gave three days for
+                    Diriba to adjust to the new environment and finally, a
+                    highly qualified Plastic Surgeon Performed the surgery.
                   </p>
                 </div>
               </div>
@@ -173,10 +145,8 @@ export default function DetailPage() {
                   </div>
 
                   <button
-                    className="btn"
+                    className="btn bir-button"
                     style={{
-                      backgroundColor: "#5DADAA",
-                      color: "white",
                       width: "100%",
                     }}
                   >
@@ -342,6 +312,7 @@ export default function DetailPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

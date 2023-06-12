@@ -7,16 +7,18 @@ import Projects from "../components/Sections/Projects";
 import Contact from "../components/Sections/Contact";
 import Footer from "../components/Sections/Footer";
 import AboutUs from "./AboutUs";
+import NavBar from "../components/NavBar/NavBar";
 
 export default function Landing() {
   return (
     <>
       <TopNavbar />
+      {/* <NavBar /> */}
       <Header />
       <Services />
       <Projects />
       <AboutUs />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </>
   );

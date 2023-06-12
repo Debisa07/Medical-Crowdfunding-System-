@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 // Components
 import FullButton from "../Buttons/FullButton";
@@ -8,30 +8,37 @@ import FullButton from "../Buttons/FullButton";
 import HeaderImage from "../../assets/img/header-img.png";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
-import motivation from "../../assets/img/Logo/legash logo.png"
+import motivation from "../../assets/img/Logo/legash logo.png";
 
 export default function Header() {
   return (
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">We are Legash !</h1>
-          <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          <h1 className="extraBold font60">Legash Fund</h1>
+          <HeaderP className="font15">
+            Welcome to LegashFund, the compassionate crowdfunding platform
+            dedicated to helping medically ill individuals get the support they
+            need for their medical expenses. Join us in transforming lives and
+            providing hope to those facing challenging health circumstances.
           </HeaderP>
           <BtnWrapper>
-              <Link to="/campain">
-        <FullButton title="Donate Now" />
-      </Link>
+            <Link to="/campain">
+              <FullButton title="See Campaigns" />
+            </Link>
           </BtnWrapper>
         </div>
       </LeftSide>
       <RightSide>
-          
         <ImageWrapper>
-          <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} width={400} />
-        
+          <Img
+            className="radius8"
+            src={HeaderImage}
+            alt="office"
+            style={{ zIndex: 9 }}
+            width={400}
+          />
+
           <DotsWrapper>
             <Dots />
           </DotsWrapper>
@@ -41,7 +48,6 @@ export default function Header() {
     </Wrapper>
   );
 }
-
 
 const Wrapper = styled.section`
   padding-top: 100px;
@@ -144,5 +150,5 @@ const DotsWrapper = styled.div`
   }
   @media (max-width: 560px) {
     display: none;
-  }  
-`;     
+  }
+`;

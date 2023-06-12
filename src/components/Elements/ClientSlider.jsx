@@ -2,10 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
 // Assets
-import ClientLogo01 from "../../assets/img/clients/logo01.png"
+import ClientLogo01 from "../../assets/img/clients/logo01.png";
 import ClientLogo02 from "../../assets/img/clients/logo02.png";
 import ClientLogo03 from "../../assets/img/clients/logo03.png";
-
 
 export default function ClientSlider() {
   const settings = {
@@ -42,7 +41,7 @@ export default function ClientSlider() {
     <div>
       <Slider {...settings}>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo01} alt="client logo" />
+          {/* <ImgStyle src={ClientLogo01} alt="client logo" /> */}
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
           <ImgStyle src={ClientLogo02} alt="client logo" />
@@ -50,14 +49,14 @@ export default function ClientSlider() {
         <LogoWrapper className="flexCenter">
           <ImgStyle src={ClientLogo03} alt="client logo" />
         </LogoWrapper>
-       <LogoWrapper className="flexCenter">
+        <LogoWrapper className="flexCenter">
           <ImgStyle src={ClientLogo01} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo03} alt="client logo" />
+          {/* <ImgStyle src={ClientLogo03} alt="client logo" /> */}
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo02} alt="client logo" />
+          {/* <ImgStyle src={ClientLogo02} alt="client logo" /> */}
         </LogoWrapper>
       </Slider>
     </div>

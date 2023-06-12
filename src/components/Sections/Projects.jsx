@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 // Components
 import ProjectBox from "../Elements/ProjectBox";
@@ -13,6 +13,7 @@ import ProjectImg3 from "../../assets/img/projects/3.png";
 import ProjectImg4 from "../../assets/img/projects/4.png";
 import ProjectImg5 from "../../assets/img/projects/5.png";
 import ProjectImg6 from "../../assets/img/projects/6.png";
+import CampaignCard from "../CampaignCard";
 // import ProjectImg1 from "../../assets/img/projects/7.png";
 
 // // const testData = [
@@ -21,162 +22,44 @@ import ProjectImg6 from "../../assets/img/projects/6.png";
 
 export default function Projects() {
   return (
-    <Wrapper id="projects">
-      <div className="whiteBg">
-        <div className="container">
-          <HeaderInfo>
-            <h1 className="font40 extraBold">OUR COMPAIGNS</h1>
-          </HeaderInfo>
-          <div className="row textCenter">
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg1}
-                title="Hitsan Tigest Abera"
-                text="Raised: $565    | Still missing: $1200 "                
-                action={() => alert("clicked")}
-              />
-      <ProgressBar  bgcolor={'#00695c'} completed={50} />
-            </div>
-            <br></br>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg3}
-                title="Lij Eyoab Samuel"
-                text="Raised: $230    | Still missing: $2200 "    
-                action={() => alert("clicked")}
-              />
-          <ProgressBar  bgcolor={'#00695c'} completed={30} />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg2}
-                title="Help Sally to get better"
-                text="We need your immediate attention.  she is very ill and need immediate  treatment."
-                action={() => alert("clicked")}
-              />
-      <ProgressBar  bgcolor={'#00695c'} completed={45} />
-            </div>
+    <>
+      <div className="container mx-auto m-5">
+        <h1 className="text-center m-5">Campaigns</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <CampaignCard
+              imageSource={ProjectImg3}
+              title="Transformative Plastic Surgeries"
+              description="Diriba is the first and only child of his parents. He was born with a cleft lip, which many in his community..."
+              fundedAmount="4000"
+              targetAmount="10000"
+            />
           </div>
-          <br></br>
-          <div className="row textCenter">
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg4}
-                title="Help Sally to get better"
-                text="We need your immediate attention.  she is very ill and need immediate  treatment."
-                action={() => alert("clicked")}
-              />
-      <ProgressBar  bgcolor={'#00695c'} completed={70} />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg5}
-                title="Help Sally to get better"
-                text="We need your immediate attention.  she is very ill and need immediate  treatment."
-                action={() => alert("clicked")}
-              />
-      <ProgressBar  bgcolor={'#00695c'} completed={38} />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg6}
-                title="Help Sally to get better"
-                text="We need your immediate attention.  she is very ill and need immediate  treatment."
-                action={() => alert("clicked")}
-              />
-      <ProgressBar  bgcolor={'#00695c'} completed={80} />      
-            </div>
+          <div class="col-md-4">
+            <CampaignCard
+              imageSource={ProjectImg2}
+              title="Transformative Plastic Surgeries"
+              description="Diriba is the first and only child of his parents. He was born with a cleft lip, which many in his community..."
+              fundedAmount="4000"
+              targetAmount="10000"
+            />
           </div>
-          <div className="row flexCenter">
-            <div style={{ margin: "50px 0", width: "200px" }}>
-              <Link to="/campain">
-  <FullButton title="Load More" />
-</Link>
-            </div>
+          <div class="col-md-4">
+            <CampaignCard
+              imageSource={ProjectImg4}
+              title="Transformative Plastic Surgeries"
+              description="Diriba is the first and only child of his parents. He was born with a cleft lip, which many in his community..."
+              fundedAmount="4000"
+              targetAmount="10000"
+            />
           </div>
         </div>
+        <div className="mx-auto mt-5" style={{ width: "250px" }}>
+          <Link to="/campain">
+            <FullButton title="See More Campaigns" />
+          </Link>
+        </div>
       </div>
-    </Wrapper>
+    </>
   );
 }
-const Wrapper = styled.section`
-  width: 100%;
-`;
-const HeaderInfo = styled.div`
-  @media (max-width: 860px) {
-    text-align: center;
-  }
-`;
-const Advertising = styled.div`
-  padding: 100px 0;
-  margin: 100px 0;
-  position: relative;
-  @media (max-width: 1160px) {
-    padding: 60px 0 40px 0;
-  }
-  @media (max-width: 860px) {
-    flex-direction: column;
-    padding: 0 0 30px 0;
-    margin: 80px 0 0px 0;
-  }
-`;
-const ButtonsRow = styled.div`
-  @media (max-width: 860px) {
-    justify-content: space-between;
-  }
-`;
-const AddLeft = styled.div`
-  position: relative;
-  width: 50%;
-  p {
-    max-width: 475px;
-  }
-  @media (max-width: 860px) {
-    width: 80%;
-    order: 2;
-    text-align: center;
-    h2 {
-      line-height: 3rem;
-      margin: 15px 0;
-    }
-    p {
-      margin: 0 auto;
-    }
-  }
-`;
-const AddRight = styled.div`
-  width: 50%;
-  @media (max-width: 860px) {
-    width: 80%;
-    order: 2;
-  }
-`;
-const AddLeftInner = styled.div`
-  width: 100%;
-  position: absolute;
-  top: -300px;
-  left: 0;
-  @media (max-width: 1190px) {
-    top: -250px;
-  }
-  @media (max-width: 920px) {
-    top: -200px;
-  }
-  @media (max-width: 860px) {
-    order: 1;
-    position: relative;
-    top: -60px;
-    left: 0;
-  }
-`;
-const ImgWrapper = styled.div`
-  width: 100%;
-  padding: 0 15%;
-  img {
-    width: 100%;
-    height: auto;
-  }
-  @media (max-width: 400px) {
-    padding: 0;
-  }
-`;

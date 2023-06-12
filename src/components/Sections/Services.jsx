@@ -7,7 +7,6 @@ import FullButton from "../Buttons/FullButton";
 // Assets
 import AddImage1 from "../../assets/img/add/1.png";
 
-
 export default function Services() {
   return (
     <Wrapper id="services">
