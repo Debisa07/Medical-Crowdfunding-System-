@@ -12,7 +12,7 @@ import Landing from "./screens/Landing.jsx";
 import Signin from "./screens/signin.jsx";
 import Signup from "./screens/signup.jsx";
 import Campain from "./screens/campain.jsx";
-import UserProfile from "./components/UserProfile/App"
+import UserProfile from "../src/components/Sections/userprofile.jsx"
 
 // import PageOne from "./screens/PageOne.jsx"; // import your additional screens
 export default function App() {
